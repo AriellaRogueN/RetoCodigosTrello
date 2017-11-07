@@ -23,10 +23,24 @@
                 <div id="personicon">
                   <div><i class="fa fa-user-o" aria-hidden="true"></i> </i></div>
                 </div>
-
+                
+            <div  >
                <form action="" id="addText">
-                <input type="text"  placeholder="Añadir una lista...">
+                <input type="text"  placeholder="Añadir una lista..." onclick="boardActive()">
                </form>
+            </div>
+            <!--para poder ocultar este elememto, lo encierro en un div 
+            y le doy un identificador-->
+            <div id="secondBoard">
+                <form action="" id="form">
+                    <input type="text" placeholder="añadir una lista...">
+                    <input type="button" value="Añadir">
+                    <div id="boardicon">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                </form>
+            </div>
+
 
             </div>
         </div>
