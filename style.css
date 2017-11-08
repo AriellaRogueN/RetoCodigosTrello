@@ -1,9 +1,11 @@
-*{
-    margin:0;
-    padding:0;
+/* Elimino caracteristicas por defecto */
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -25,81 +27,92 @@ header {
 
 header div img {
     width: 100px;
-    
 }
 
-#title h3{
- margin-left: 50px;
- margin-top: 30px;
- font-size: 16px;
+#title h3 {
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 16px;
 }
 
-#personicon{
-    position:relative;
-    bottom:22px;
+#personicon {
+    position: relative;
+    bottom: 22px;
     margin-left: 20px;
     font-size: 20px;
 }
 
+
 /*estilizo formularioinicial*/
 
-#addText input{
+#addText {
+    display: block;
+}
+
+#addText input {
     width: 180px;
     margin-left: 20px;
     background-color: rgb(58, 129, 170);
     font-size: 14px;
-    padding-bottom:5px;
-    cursor:pointer;
-   
+    padding-bottom: 5px;
+    cursor: pointer;
 }
- /*cambio color al texto del input*/
-#addText input::placeholder{
+
+
+/*cambio color al texto del input*/
+
+#addText input::placeholder {
     color: white;
 }
 
-#addText input:focus{
+#addText input:focus {
     background-color: #0066A9;
 }
+
+
 /*estilizo formularios*/
+
+
 /*este formulario será ocultado, se visualizará cuando el usuario
 haga click sobre el primer formulario,se utiliza display none*/
-#secondboard{
-    
+
+#secondboard {}
+
+#form {
+    display: none;
+    background-color: #E1E3E6;
+    padding: 50px;
+    border-radius: 5px;
+    width: 82px;
+    margin-left: 20px;
 }
 
- #form{
-display:none;
-background-color: #E1E3E6;
-padding:50px;
-border-radius: 5px;
-width: 82px;
-margin-left:20px;
+input {
+    margin-left: -30px;
+    font-size: 14px;
+}
 
-}
-    input{
-    margin-left:-30px;
-   font-size: 14px;
-   
-}
-    input[type="text"] {
+input[type="text"] {
     width: 130px;
     background-color: white;
     padding-bottom: 10px;
-    
 }
 
-    input[type="button"] {
-        background-color: #279D32;
-        width:60px ;
-        padding:5px;
-        color: white;
-        font-weight: bold ;
-        cursor:pointer;
+input[type="button"] {
+    background-color: #279D32;
+    width: 60px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
 }
+
+
 /*icono del formulario*/
-#boardicon{
+
+#boardicon {
     position: relative;
-    left:50px;
-    bottom:28px;
+    left: 50px;
+    bottom: 28px;
     font-size: 28px;
 }
