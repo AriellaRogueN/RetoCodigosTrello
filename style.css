@@ -43,29 +43,31 @@ header div img {
 }
 
 
-/*estilizo formularioinicial*/
+/*estilizo boton inicial*/
 
-#addText {
+#addList {
     display: block;
 }
 
-#addText input {
+#addList input {
     width: 180px;
     margin-left: 20px;
     background-color: rgb(58, 129, 170);
     font-size: 14px;
     padding-bottom: 5px;
+    color: white;
+    text-align: left;
     cursor: pointer;
 }
 
 
 /*cambio color al texto del input*/
 
-#addText input::placeholder {
+#addList input::placeholder {
     color: white;
 }
 
-#addText input:focus {
+#addList input:focus {
     background-color: #0066A9;
 }
 
@@ -74,45 +76,48 @@ header div img {
 
 
 /*este formulario será ocultado, se visualizará cuando el usuario
-haga click sobre el primer formulario,se utiliza display none*/
+haga click sobre el primer boton,se utiliza display none*/
 
-#secondboard {}
 
-#form {
+div #form {
     display: none;
-    background-color: #E1E3E6;
-    padding: 50px;
     border-radius: 5px;
-    width: 82px;
+    width: 265px;
+    height:90px;
     margin-left: 20px;
+    background-color: #E1E3E6;
+   
 }
 
-input {
-    margin-left: -30px;
+#form input {
+   
     font-size: 14px;
+    
+    line-height: 30.5px;
 }
 
-input[type="text"] {
-    width: 130px;
+#form input[type="text"] {
+    
     background-color: white;
-    padding-bottom: 10px;
+    width: 250px;
+    margin: 5px;
+    
 }
 
-input[type="button"] {
+#form input[type="button"] {
     background-color: #279D32;
-    width: 60px;
-    padding: 5px;
     color: white;
     font-weight: bold;
+    margin-top: 2.5px;
+    margin-left: 5px;
+    border-radius: 5px;
     cursor: pointer;
 }
-
 
 /*icono del formulario*/
 
 #boardicon {
-    position: relative;
-    left: 50px;
-    bottom: 28px;
+    
     font-size: 28px;
 }
+

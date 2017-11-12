@@ -18,36 +18,31 @@
         </div>
     </header>
     <section>
-        <div class="contenido">
+        
             <div class="boardArea">
                 <div id="title">
                     <h3>Tableros Personales</h3>
                     <div id="personicon">
-                        <div>
+                        
                             <i class="fa fa-user-o" aria-hidden="true"></i>
                             </i>
-                        </div>
+                    </div>
+                </div>
+                    <div id="addList">
+                        <input type="button" value="Añadir una lista..." onclick="boardActive()">
                     </div>
 
-                    <div>
-                        <form action="" id="addText">
-                            <input type="text" placeholder="Añadir una lista..." onclick="boardActive()" ; "boardInactive()">
-                        </form>
-                    </div>
-                    <!--para poder ocultar este elememto, lo encierro en un div 
-            y le doy un identificador-->
                     <div>
                         <form action="" id="form">
-                            <input type="text" placeholder="añadir una lista...">
-                            <input type="button" value="Añadir">
-                            <div id="boardicon">
-                                <i class="fa fa-times" aria-hidden="true"></i>
-                            </div>
+                            <input type="text" id="nameList" placeholder="Añadir una lista...">
+                            <input type="button" id="btn-2" value="Guardar" onclick="save()">
+                            <i class="fa fa-times" aria-hidden="true" id="boardicon"></i>
                         </form>
                     </div>
-
-                </div>
+                    
+                
             </div>
+       
 
     </section>
     <script type="text/javascript" src="app.js"></script>
