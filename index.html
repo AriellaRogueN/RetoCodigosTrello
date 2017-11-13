@@ -16,33 +16,65 @@
             <img src="logo.png" alt="trello">
             <!--faltan divs de iconos-->
         </div>
+        <nav>
+            <div>
+                <span class="menuTrello">
+                    <a href="#">
+                        <i class="fa fa-trello" aria-hidden="true"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="menu">
+                <span class="menuIconos">
+                    <a href="#">
+                        <i class="fa fa-plus-square" aria-hidden="true"></i>
+                    </a>
+                </span>
+                <span class="menuIconos">
+                    <a href="#">
+                        <i class="fa fa-snapchat-square" aria-hidden="true"></i>
+                    </a>
+                </span>
+                <span class="menuIconos">
+                    <a href="#">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    </a>
+                </span>
+            </div>
+        </nav>
+
     </header>
     <section>
-        
-            <div class="boardArea">
-                <div id="title">
-                    <h3>Tableros Personales</h3>
-                    <div id="personicon">
-                        
-                            <i class="fa fa-user-o" aria-hidden="true"></i>
-                            </i>
-                    </div>
-                </div>
-                    <div id="addList">
-                        <input type="button" value="Añadir una lista..." onclick="boardActive()">
-                    </div>
 
-                    <div>
-                        <form action="" id="form">
-                            <input type="text" id="nameList" placeholder="Añadir una lista...">
-                            <input type="button" id="btn-2" value="Guardar" onclick="save()">
-                            <i class="fa fa-times" aria-hidden="true" id="boardicon"></i>
-                        </form>
-                    </div>
-                    
-                
+        <div class="boardArea">
+            <div id="title">
+                <h3>Tableros Personales</h3>
+                <div id="personicon">
+
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                    </i>
+                </div>
             </div>
-       
+            <div id="addList">
+                <input id="input-1" type="button" value="Añadir una lista..." onclick="boardActive()">
+            </div>
+
+            <div>
+                <form action="" id="form">
+                    <input type="text" id="nameList" placeholder="Añadir una lista...">
+                    <input type="button" id="btn-2" value="Guardar" onclick="save()">
+                    <i class="fa fa-times" aria-hidden="true" id="boardicon"></i>
+                </form>
+            </div>
+
+            <div>
+                <form action="" id="form-2">
+                    <input type="text" id="card">
+                    <input type="button" id="btnForm-2" value="Añadir" onclick="añadir()">
+            </div>
+            </form>
+
+        </div>
 
     </section>
     <script type="text/javascript" src="app.js"></script>

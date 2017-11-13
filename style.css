@@ -29,6 +29,23 @@ header div img {
     width: 100px;
 }
 
+.menuIconos {
+    position: relative;
+    bottom: 40px;
+    font-size: 28px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: right;
+}
+
+.menuTrello {
+    position: relative;
+    float: left;
+    font-size: 28px;
+    margin-left: 10px;
+    bottom: 40px;
+}
+
 #title h3 {
     margin-left: 50px;
     margin-top: 30px;
@@ -78,30 +95,24 @@ header div img {
 /*este formulario será ocultado, se visualizará cuando el usuario
 haga click sobre el primer boton,se utiliza display none*/
 
-
 div #form {
     display: none;
     border-radius: 5px;
     width: 265px;
-    height:90px;
+    height: 90px;
     margin-left: 20px;
     background-color: #E1E3E6;
-   
 }
 
 #form input {
-   
     font-size: 14px;
-    
     line-height: 30.5px;
 }
 
 #form input[type="text"] {
-    
     background-color: white;
     width: 250px;
     margin: 5px;
-    
 }
 
 #form input[type="button"] {
@@ -114,10 +125,37 @@ div #form {
     cursor: pointer;
 }
 
+
 /*icono del formulario*/
 
 #boardicon {
-    
     font-size: 28px;
 }
 
+div #form-2 {
+    display: block;
+    border-radius: 5px;
+    width: 265px;
+    height: 150px;
+    margin-left: 20px;
+    background-color: #E1E3E6;
+}
+
+#form-2 input[type="text"] {
+    background-color: white;
+    width: 250px;
+    height: 80px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+#form-2 input[type="button"] {
+    background-color: #279D32;
+    color: white;
+    font-weight: bold;
+    margin-top: 2.5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 30px;
+}
